@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🌐 Language Translation Tool</h2>
+        
+        <!-- Language Selection Dropdowns -->
+        <div class="language-select">
+            <div class="select-group">
+                <label>From:</label>
+                <select id="sourceLang">
+                    <option value="en-GB">English</option>
+                    <option value="bn-IN">Bengali</option>
+                    <option value="hi-IN">Hindi</option>
+                    <option value="es-ES">Spanish</option>
+                    <option value="fr-FR">French</option>
+                </select>
+            </div>
+            <div class="select-group">
+                <label>To:</label>
+                <select id="targetLang">
+                    <option value="bn-IN">Bengali</option>
+                    <option value="en-GB">English</option>
+                    <option value="hi-IN">Hindi</option>
+                    <option value="es-ES">Spanish</option>
+                    <option value="fr-FR">French</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Input & Output Textareas -->
+        <div class="text-boxes">
+            <textarea id="inputText" placeholder="Enter text here..."></textarea>
+            <textarea id="outputText" placeholder="Translation will appear here..." readonly></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="button-group">
+            <button id="translateBtn">Translate Text</button>
+            <button id="copyBtn" class="secondary-btn">📋 Copy</button>
+            <button id="speechBtn" class="secondary-btn">🔊 Listen</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
